@@ -19,6 +19,7 @@
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
+       
       }
 
       @media (min-width: 768px) {
@@ -101,7 +102,7 @@
             <!-- coloana2 -->
             <div class="col-md-8 bg-success bg-opacity-50">
               <h3 class="display-5 text-black text-center py-4 mb-2">Contacteaza-ne</h3>
-              <form class="row g-3">
+              <form class="row g-3 needs-validation">
               <div class="form-group mb-3">
                 <select class="form-select form-select-lg " aria-label="Default select example">
                   <option value="1">Asistenta pentru clienti</option>
@@ -119,25 +120,26 @@
                   <option value="3">alta tara</option>
                 </select>
               </div>
-              <div class="form-floating mb-3">
-                <input type="name" class="form-control" id="floatingName" placeholder="Nume">
-                <label for="floatingName">Nume<span class="form-required text-danger" title="Acest cimp e obligatoriu.">*</span></label>
+              <div class="form-floating mb-3 has-validation">
+                <input type="name" class="form-control" id="validationCustom01" placeholder="Nume" required >
+                <label for="validationCustom01">Nume<span class="text-danger" title="Acest cimp e obligatoriu.">*</span></label>
+              
               </div>
             
-              <div class="form-floating mb-3">
-                <input type="lastname" class="form-control" id="floatingLastName" placeholder="LastName">
-                <label for="floatingLastName">Prenume<span class="form-required text-danger" title="Acest cimp e obligatoriu.">*</span></label>
+              <div class="form-floating mb-3 has-validation">
+                <input type="lastname" class="form-control" id="validationCustom02" placeholder="LastName"required >
+                <label for="validationCustom02">Prenume<span class="form-required text-danger" title="Acest cimp e obligatoriu.">*</span></label>
               </div>
               <div class="form-floating mb-3">
                 <input type="age" class="form-control" id="floatingAge" placeholder="Age">
                 <label for="floatingAge">Varsta<span>(optional)</span></label>
               </div>
               <div class="form-floating mb-3">
-                <input type="email" class="form-control  required" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address<span class="form-required text-danger" title="Acest cimp e obligatoriu.">*</span></label>
+                <input type="email" class="form-control  required" id="validationCustom03" placeholder="name@example.com" required >
+                <label for="validationCustom03">Email address<span class="form-required text-danger" title="Acest cimp e obligatoriu.">*</span></label>
               </div>
              
-              <div class="form-floating mb-3 input-group-lg">
+              <div class="form-floating mb-3 input-group-lg has-validation">
                 <textarea rows="3" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                 <label for="floatingTextarea">Scrie aici mesajul tau</label>
               </div>
